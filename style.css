@@ -14,7 +14,7 @@ header {
     align-items: center;
     background-color: white;
     height: 6vw;
-    font-size: 1.5em;
+    font-size: 1.3vw;
     font-weight: 400;
 }
 
@@ -64,6 +64,11 @@ header a:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+#content {
+    text-align: center;
+    margin: 0 5%
+}
+
 #imgCarouselButtons {
     text-align: center;
     position: absolute;
@@ -84,13 +89,36 @@ header a:hover {
 }
 
 #imgCarousel h1 {
-    font-size: 7em;
+    font-size: 7vw;
     margin-top: 12vw;
     margin-left: 8vw;
 }
 
 #imgCarousel h2 {
-    font-size: 3.5em;
+    font-size: 3.5vw;
     margin-top: -3vw;
     margin-left: 8vw;
+}
+
+@media only screen and (max-width: 801px) {
+    header {
+        height: 10vw;
+        font-size: 2.75vw;
+    }
+
+    #imgCarouselButtons {
+        visibility: hidden;
+    }
+
+    #imgCarousel {
+        height: calc(100% - 10vw);
+    }
+
+    #imgCarousel h1 {
+        font-size: 10vw;
+    }
+
+    #imgCarousel h2 {
+        font-size: 5vw;
+    }
 }
